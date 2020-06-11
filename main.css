@@ -1,19 +1,44 @@
-.main {
-  padding: 25px;
-  background-color: #efefef;
+#main-content {
+  height: 1000px;
+  width: 1000px;
+  background-color: teal;
+  position: relative;
+
 }
 
-#title {
-  background-color: #3d3d3d;
-  color: #fff;
-  padding: 15px;
-  border-radius: 5px;
+.content {
+  height: 100px;
+  width: 100px;
 }
 
-#body {
-  font-size: 22px;
+#main-content-1 {
+  background-color: yellow;
+  position: absolute;
+  top: 20px;
+  z-index: 2;
+}
+
+#main-content-2 {
+  background-color: pink;
+  /* bottom: 0px; */
+  /* top: unset; */
+  right: 50px;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: 0px;
+  z-index: 2;
+}
+
+#main-content-3 {
+  background-color: black;
+
+}
+
+#sidebar {
+
 }
 
 #footer {
-  font-size: 18px;
+
 }
