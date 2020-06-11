@@ -1,44 +1,112 @@
-#main-content {
-  height: 1000px;
-  width: 1000px;
-  background-color: teal;
-  position: relative;
+/* Global */
 
+html, body {
+  height: 100%;
+  width: 100%;
 }
 
-.content {
-  height: 100px;
-  width: 100px;
+body {
+  margin: 0px;
 }
 
-#main-content-1 {
-  background-color: yellow;
-  position: absolute;
-  top: 20px;
-  z-index: 2;
-}
-
-#main-content-2 {
-  background-color: pink;
-  /* bottom: 0px; */
-  /* top: unset; */
-  right: 50px;
-  height: 200px;
+/* Custom global */
+.custom-btn {
+  background-color: transparent;
+  border: 1px solid #fff;
   width: 200px;
+  height: 45px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+  outline: none;
+}
+
+.custom-btn:hover {
+  background: #fff;
+  color: #1f3a51;
+  cursor: pointer;
+}
+
+.custom-card {
+  align-items: center;
+  background-color: rgba(255,255,255,0.25);
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 65% 35%;
+  height: 65%;
+  justify-items: center;
+  width: 400px;
+}
+
+.custom-card-top, 
+.custom-card-bottom {
+  height: calc(100% - 15px);
+  width: calc(100% - 15px);
+  background-color: rgba(52, 96, 134, 0.25);
+}
+
+.custom-card-top h1 {
+  font-size: 68px;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 3px;
+  line-height: 65px;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+}
+
+.custom-card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Navbar CSS */
+.navbar {
   position: absolute;
-  top: 0px;
-  z-index: 2;
+  width: 100%;
 }
 
-#main-content-3 {
-  background-color: black;
-
+/* Splash section */
+#splash {
+  background-image: url('https://images.pexels.com/photos/547114/pexels-photo-547114.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
 }
 
-#sidebar {
-
+#splash-overlay {
+  align-items: center;
+  background-color: rgba(0,0,0,0.45);
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
 }
 
-#footer {
+/* Cards section */
+#cards {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3,33%);
+  grid-template-rows: 100%;
+  align-items: center;
+  justify-items: center;
+}
 
+.card {
+  height: 65%;
+  width: 75%;
+  position: relative;
+}
+
+.card .content button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
 }
