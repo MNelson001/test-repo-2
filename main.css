@@ -65,8 +65,13 @@ body {
 
 /* Navbar CSS */
 .navbar {
-  position: absolute;
+  position: absolute !important;
+  background-color: rgba(0,0,0,0.15) !important;
   width: 100%;
+}
+
+.navbar .navbar-item {
+  color: #fff;
 }
 
 /* Splash section */
